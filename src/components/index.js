@@ -6,7 +6,7 @@ import Logo from "./Logo";
 import Button from "./Button";
 import Input from "./Input";
 import RTE from "./RTE";
-import Signup from "./Signup";
+import Signup from "./SignUp";
 import Login from "./Login";
 import PostForm from "./Post-Form/PostForm";
 import AuthLayout from "./AuthLayout";
