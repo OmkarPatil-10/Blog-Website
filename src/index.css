@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+body {
+    background-color: 	#FFFDF9;
+}
+
+@layer components{
+    .header{
+         background-color: 	#121212;
+         color: #ffffff;
+    }
+
+    .card{
+         background-color: #121212;
+         color: #ffffff;
+         border: 1px solid #ffae00;
+    }
+
+    .button{
+        background-color: #121212;
+        color: #ffffff;
+        border: 1px solid #ffae00;
+    }
+}
+
+
+
