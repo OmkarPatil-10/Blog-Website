@@ -52,14 +52,14 @@ export default function Post() {
               <Link to={`/edit-post/${post.$id}`}>
                 <Button
                   bgColor="bg-green-500"
-                  className="mr-3 transition duration-[0.25s] hover:bg-green-600"
+                  className="mr-3 transition duration-[0.25s]  hover:bg-green-600 dark:bg-green-500 "
                 >
                   Edit
                 </Button>
               </Link>
               <Button
                 bgColor="bg-red-500"
-                className="transition duration-[0.25s] hover:bg-red-600 "
+                className="transition duration-[0.25s] hover:bg-red-600 dark:bg-red-500"
                 onClick={deletePost}
               >
                 Delete
@@ -67,7 +67,7 @@ export default function Post() {
             </div>
           )}
         </div>
-        <div className="flex flex-col p-4 rounded-md border-1 border-[#ffed29] bg-[#fffed8] justify-between items-center mb-4">
+        <div className="flex flex-col p-4 rounded-md border-1 border-[#ffed29] dark:border-[#202031] bg-[#fffed8] dark:bg-[#2e2e48]  justify-between items-center dark:text-[#F8FAFC] mb-4 transition-all duration-500 ease-in-out">
           <div className="w-full mb-6">
             <h1 className="text-2xl underline font-bold">{post.title}</h1>
           </div>

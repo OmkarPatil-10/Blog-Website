@@ -22,7 +22,7 @@ function PostCard({ $id, title, featuredImage, content, $createdAt }) {
   return (
     <Link to={`/post/${$id}`}>
       {/* {console.log(appwriteService.getFileView(featuredImage))} */}
-      <div className="w-full bg-[#fffed8] rounded-xl p-3 flex flex-col justify-between h-[370px] border border-[#ffed29] transition-all hover:border-2 hover:shadow-lg">
+      <div className="w-full bg-[#fffed8] dark:bg-[#2A2A3B] rounded-xl p-3 flex flex-col justify-between h-[370px] border border-[#ffed29] dark:border-[#3B3B54]  hover:border-2 hover:shadow-lg dark:hover:shadow-[#334155] dark:hover:shadow-lg transition-all duration-500 ease-in-out">
         <div className="w-full h-[200px] flex justify-center items-center overflow-hidden rounded-lg ">
           <img
             src={appwriteService.getFileView(featuredImage)}
@@ -30,15 +30,15 @@ function PostCard({ $id, title, featuredImage, content, $createdAt }) {
             className="w-full h-full object-fill rounded-xl"
           />
         </div>
-        <h2 className="text-xl font-bold text-gray-800  line-clamp-2 ">
+        <h2 className="text-xl font-bold text-gray-800 dark:text-[#F8FAFC] line-clamp-2  transition-all duration-500 ease-in-out">
           {title}
         </h2>{" "}
         {/* Limit title to 2 lines */}
-        <div className="text-gray-600 text-sm  line-clamp-2 ">
+        <div className="text-gray-600 dark:text-[#CBD5E1] text-sm  line-clamp-2  transition-all duration-500 ease-in-out">
           {truncatedContent}
         </div>{" "}
         {/* Limit content to 3 lines */}
-        <div className="text-blue-600 text-[12px] text-right ">
+        <div className="text-blue-600 dark:text-blue-400 text-[12px] text-right transition-all duration-500 ease-in-out ">
           {formattedDate}
         </div>{" "}
         {/* Display date */}

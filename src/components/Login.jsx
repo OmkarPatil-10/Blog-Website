@@ -34,7 +34,7 @@ function Login() {
 
   return (
     <div className="flex items-center justify-center w-full min-h-[82vh] md:min-h-[72vh]  ">
-      <div className="mx-auto w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg bg-yellow-100 rounded-xl p-6 sm:p-8 md:p-10  hover:border-1 hover:border-orange-400">
+      <div className="mx-auto w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg bg-yellow-100 dark:bg-[#1E1E2E] rounded-xl p-6 sm:p-8 md:p-10  hover:border-1 hover:border-orange-400 dark:hover:border-[#454568] transition-all duration-500 ease-in-out">
         <div className="mb-2 flex justify-center">
           <span className="inline-block w-full max-w-[100px]">
             <Logo width="100%" />
@@ -43,11 +43,11 @@ function Login() {
         <h2 className="text-center text-2xl font-bold leading-tight">
           Sign in to your account
         </h2>
-        <p className="mt-2 text-center text-base text-black/60">
+        <p className="mt-2 text-center dark:text-[#CBD5E1] text-base text-black/60 transition-all duration-500 ease-in-out">
           Don&apos;t have any account?&nbsp;
           <Link
             to="/signup"
-            className="font-semibold text-orange-500 transition-all duration-200 hover:underline"
+            className="font-semibold text-orange-500 dark:text-[#F97316] transition-all ease-in-out duration-200 hover:underline"
           >
             Sign Up
           </Link>
@@ -76,7 +76,10 @@ function Login() {
                 required: true,
               })}
             />
-            <Button type="submit" className="w-full">
+            <Button
+              type="submit"
+              className="w-full  dark:bg-[#F97316] dark:hover:bg-[#F97316] transition-all duration-500 ease-in-out"
+            >
               Sign in
             </Button>
           </div>

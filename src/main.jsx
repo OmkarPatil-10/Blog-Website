@@ -15,6 +15,7 @@ import {
   Login,
 } from "./pages/index.js";
 import { AuthLayout } from "./components/index.js";
+import { ThemeProvider } from "./context/ThemeContext.jsx";
 
 const router = createBrowserRouter([
   {
@@ -75,8 +76,10 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Provider store={store}>
-      <RouterProvider router={router} />
-    </Provider>
+    <ThemeProvider>
+      <Provider store={store}>
+        <RouterProvider router={router} />
+      </Provider>
+    </ThemeProvider>
   </StrictMode>
 );
