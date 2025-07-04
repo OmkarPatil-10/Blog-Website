@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
-body {
-    background-color: 	#FFFDF9;
-}
+/* body {
+    background-color: 	#FFFDF9; 
+    
+} */
 
 @layer components{
     .header{
