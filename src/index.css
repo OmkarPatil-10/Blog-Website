@@ -26,4 +26,13 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+@layer utilities {
+  .custom-transition {
+    transition-property: background-color, color, border, box-shadow;
+    transition-duration: 500ms, 500ms, 100ms, 100ms;
+    transition-timing-function: ease-in-out;
+  }
+}
+
+
 

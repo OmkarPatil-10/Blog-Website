@@ -22,7 +22,7 @@ function PostCard({ $id, title, featuredImage, content, $createdAt }) {
   return (
     <Link to={`/post/${$id}`}>
       {/* {console.log(appwriteService.getFileView(featuredImage))} */}
-      <div className="w-full bg-[#fffed8] dark:bg-[#2A2A3B] rounded-xl p-3 flex flex-col justify-between h-[370px] border border-[#ffed29] dark:border-[#3B3B54]  hover:border-2 hover:shadow-lg dark:hover:shadow-[#334155] dark:hover:shadow-lg transition-all duration-500 ease-in-out">
+      <div className="custom-transition w-full bg-[#fffed8] dark:bg-[#2A2A3B] rounded-xl p-3 flex flex-col justify-between h-[370px] border border-[#ffed29] dark:border-[#3B3B54]  hover:border-2 hover:shadow-lg dark:hover:shadow-[#334155] dark:hover:shadow-lg">
         <div className="w-full h-[200px] flex justify-center items-center overflow-hidden rounded-lg ">
           <img
             src={appwriteService.getFileView(featuredImage)}
